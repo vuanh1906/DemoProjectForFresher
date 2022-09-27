@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="AdminModule">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    
+  
+
+           <link href="~/Scripts/plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+           <link href="~/Scripts/plugin/bootstrap/css/bootstrap-select.css" rel="stylesheet"/>
+           <link href="~/Scripts/plugin/bootstrap/css/bootstrap-datetimepicker.min.css" rel="stylesheet"/>
+           <link href="~/Scripts/plugin/kendoui/css/kendo.bootstrap.min.css" rel="stylesheet"/>
+           <link href="~/Scripts/plugin/kendoui/css/kendo.common-bootstrap.min.css" rel="stylesheet"/>
+           <link href="~/Scripts/plugin/font-awesome/css/font-awesome.css" rel="stylesheet"/>
+           <link href="~/Scripts/plugin/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+
+           <link href="~/Scripts/css/base/main.css" rel="stylesheet"/>
+           <link href="~/Scripts/css/base/popup.css" rel="stylesheet"/>
+           <link href="~/Scripts/css/base/notification.css" rel="stylesheet"/>
+
+           <link href="~/Scripts/plugin/custom/layout.css" rel="stylesheet"/>
+           <link href="~/Scripts/plugin/custom/darkblue.css" rel="stylesheet"/>
+         @*  <link href="~/Scripts/css/style/common.css" rel="stylesheet"/>
+           <link href="~/Scripts/css/style/custom.css" rel="stylesheet"/>
+           <link href="~/Scripts/css/style/components.css" rel="stylesheet"/>
+           <link href="~/Scripts/css/treeview/treecustom.css" rel="stylesheet"/>*@
+           <link href="~/Scripts/plugin/treeview/css/style.css" rel="stylesheet"/>
+           <link href="~/Scripts/plugin/treeview/prints/print-preview.css" rel="stylesheet"/>
+
+           <script src="~/Scripts/plugin/jquery/js/jquery.min.js"></script>
+           <script src="~/Scripts/plugin/jquery/js/jquery-ui-1.10.3.custom.min.js"></script>
+           <script src="~/Scripts/plugin/jquery.form/jquery.form.min.js"></script>
+
+           <script src="~/Scripts/plugin/bootstrap/js/bootstrap-hover-dropdown.min.js"></script>
+           <script src="~/Scripts/plugin/bootstrap/js/metronic.js"></script>
+
+
+           <script src="~/Scripts/plugin/bootstrap/js/bootstrap.min.js"></script>
+           <script src="~/Scripts/plugin/kendoui/js/kendo.all.min.js"></script>
+           <script src="~/Scripts/plugin/kendoui/js/kendo.aspnetmvc.min.js"></script>
+           <script src="~/Scripts/plugin/noty/jquery.noty.js"></script>
+           <script src="~/Scripts/plugin/noty/layouts/center.js"></script>
+           <script src="~/Scripts/plugin/noty/layouts/topRight.js"></script>
+           <script src="~/Scripts/plugin/noty/themes/default.js"></script>
+
+           <script src="~/Scripts/plugin/validation/jquery.validate.js"></script>
+           <script src="~/Scripts/plugin/validation/jquery.validate.min.js"></script>
+           <script src="~/Scripts/plugin/validation/jquery.validate.unobtrusive.min.js"></script>
+           <script src="~/Scripts/plugin/validation/jquery.validate.kendo.js"></script>
+
+         @*  <script src="~/Scripts/js/base/setaJs.modules.js"></script>
+           <script src="~/Scripts/js/scripts/layout.js"></script>
+           <script src="~/Scripts/js/scripts/default.js"></script>
+           <script src="~/Scripts/plugin/treeview/js/jstree.min.js"></script>
+           <script src="~/Scripts/js/treeview/AjaxBase.js"></script>*@
+
+   
+
+
+    <script src="~/Scripts/jquery.js"></script>
+    <script src="~/Scripts/can.jquery.js"></script>
+
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/angular-route.js"></script>
+ 
+
+    <script src="~/Areas/Admin/Angular/Module/app.js"></script>
+    <script src="~/Areas/Admin/Angular/Controller/domainInforController.js"></script>
+    <script src="~/Areas/Admin/Angular/Service/domainInforService.js"></script>
+    <script src="~/Areas/Admin/Angular/Controller/createDomainInforController.js"></script>
+    <script src="~/Areas/Admin/Angular/Service/createDomainInforService.js"></script>
+    <script src="~/Areas/Admin/Angular/Controller/updateDomainInforController.js"></script>
+    <script src="~/Areas/Admin/Angular/Service/updateDomainInforService.js"></script>
+    
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/blend-home.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

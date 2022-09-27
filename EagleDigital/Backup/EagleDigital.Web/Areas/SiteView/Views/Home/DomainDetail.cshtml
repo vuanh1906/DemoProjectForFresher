@@ -1,0 +1,80 @@
+﻿@model EagleDigital.Web.Areas.SiteView.Models.DomainInforModel
+@{
+    ViewBag.Title = "Domain Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@foreach(var item in Model.ListDomainInfors){
+    <text>
+        <div id="rs_digital_storage">
+            @Html.Raw(item.Content)
+        </div>
+    </text>
+}
+
+@*<div id="rs_digital_storage">
+    <script language="JavaScript" src="@Url.Content("~/Scripts/BrightcoveExperiences.js")" type="text/javascript" space="preserve"> </script>
+    <div class="hpe_overlay video_bc" id="overlay_mp4_video">
+        <div class="video_wrapper">
+            <!-- Begin of Brightcove Player -->
+            <object type="application/x-shockwave-flash" data="http://c.brightcove.com/services/viewer/federated_f9?&amp;width=640&amp;height=360&amp;flashID=myExperience2516054781001&amp;htmlFallback=true&amp;bgcolor=%23FFFFFF&amp;playerID=1377059119001&amp;playerKey=AQ~~%2CAAABAeI3VIE~%2CN0OfmZCPaxh-U75tF8pHH0iLtpzUxRz-&amp;isVid=true&amp;isUI=true&amp;dynamicStreaming=true&amp;%40videoPlayer=2516054781001&amp;autoStart=&amp;debuggerID=&amp;startTime=1442027587911" id="myExperience2516054781001" width="640" height="360" class="BrightcoveExperience" seamlesstabbing="undefined">
+                <param name="allowScriptAccess" value="always">
+                <param name="allowFullScreen" value="true">
+                <param name="seamlessTabbing" value="false">
+                <param name="swliveconnect" value="true">
+                <param name="wmode" value="window">
+                <param name="quality" value="high">
+                <param name="bgcolor" value="#FFFFFF">
+            </object>
+            <!-- End of Brightcove Player -->
+        </div>
+        <a class="hpe_overlay_cls" href="javascript:void(0);" shape="rect" style="text-decoration: none;">&nbsp;</a></div>
+    <div class="hpe_overlay video_bc" id="overlay_mp9_video">
+        <div class="video_wrapper">
+            <!-- Begin of Brightcove Player -->
+            <object type="application/x-shockwave-flash" data="http://c.brightcove.com/services/viewer/federated_f9?&amp;width=640&amp;height=360&amp;flashID=myExperience2516054781001&amp;htmlFallback=true&amp;bgcolor=%23FFFFFF&amp;playerID=1377059119001&amp;playerKey=AQ~~%2CAAABAeI3VIE~%2CN0OfmZCPaxh-U75tF8pHH0iLtpzUxRz-&amp;isVid=true&amp;isUI=true&amp;dynamicStreaming=true&amp;%40videoPlayer=2516054781001&amp;autoStart=&amp;debuggerID=&amp;startTime=1442027587912" id="myExperience2516054781001" width="640" height="360" class="BrightcoveExperience" seamlesstabbing="undefined">
+                <param name="allowScriptAccess" value="always">
+                <param name="allowFullScreen" value="true">
+                <param name="seamlessTabbing" value="false">
+                <param name="swliveconnect" value="true">
+                <param name="wmode" value="window">
+                <param name="quality" value="high">
+                <param name="bgcolor" value="#FFFFFF">
+            </object>
+            <!-- End of Brightcove Player -->
+        </div>
+        <a class="hpe_overlay_cls" href="javascript:void(0);" shape="rect" style="text-decoration: none;">&nbsp;</a></div>
+    <script type="text/javascript" space="preserve">                        brightcove.createExperiences();</script>
+    <div class="pop_drk"></div>
+    <!-- END VIDEOS -->
+    <!-- start content integration -->
+    <div class="breakout_recenter clearfix">
+        <div class="hp_recommends"><strong xmlns="">HP recommends Windows.</strong></div>
+        <div class="clearall"></div>
+    </div>
+    <div class="split_container">
+        <h2><span class="f31 str">Capture customer attention and create an enhanced in-store experience</span></h2>
+        <p><span class="final">Go big or go home. You’ve got to be bold and memorable for your brand to stand out from the crowd. Stunning HP Digital Signage and interactive solutions enable you to engage customers, personalize the experience and increase loyalty.</span></p>
+    </div>
+    <div class="split_container interactive_signage_display hairline_bottom">
+        <div class="split_50 interactive_signage_display_content clearfix">
+            <div class="left">
+                <h2 class="m30">Performance Digital Signage Displays</h2>
+                <p>See the difference on a dynamic, touch or non-touch 42 or 47-inch diagonal digital signage display. These displays include factory-integrated multi-touch, touch screens with advanced IR technology for accurate touch recognition and support of numerous gestures with no “ghosting”. They are plug and play and Windows® HID compliant for quick and easy installation.</p>
+                <p><span class="str">Features</span></p>
+                <ul class="bulleted_list_outside">
+                    <li xmlns="">Video-over-Ethernet input </li>
+                    <li>Embedded USB Media Sign Player</li>
+                    <li>Designed for 24/7 play</li>
+                    <li>Local or remote management</li>
+                </ul>
+                <div class="button_set"><a class="button inline primary" href="" rel="Learn more" shape="rect"><span class="btn_label">Learn more</span></a></div>
+            </div>
+            <div class="right">
+                <div class="product_image">
+                    <img xmlns="" alt="Performance Digital Signage Displays" src="@Url.Content("~/Content/Image/performance-hero_v3_tcm_245_1607399.jpg")"></div>
+            </div>
+        </div>
+    </div>
+</div>*@
+

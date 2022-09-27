@@ -1,0 +1,7 @@
+﻿git@github.com:thanhtung7485/mick.vn.git
+thanhtung7485@gmail.com
+votinh1234$
+
+MVC4
+EntitiFrameWork 5
+.Net FrameWork  4.5

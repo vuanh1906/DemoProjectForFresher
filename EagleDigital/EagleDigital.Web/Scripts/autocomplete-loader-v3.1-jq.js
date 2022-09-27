@@ -1,0 +1,9 @@
+
+(function($,can,HP){can.view.ejs('ACLoaderEJS','    <ul>'+'        <% can.$.each(list, function( i, item ) { %>'+'                <li>'+'                    <a id="i<%= i%>" href="javascript:void(0);" class="js_suggestion_text" data-suggestion="<%=this.term0%>">'+'                        <%= this.term0 %>'+'                    </a>'+'                </li>'+'        <% }) %>'+'    </ul>');HP.DefaultAutocompleteSSLoader=can.Control({defaults:{view:"ACLoaderEJS",language:'',country:'',requestType:'jsonp',url:'',count:10,callbackParam:'cb'}},{'init':function(element,options){this.type='iap-fast';},'getSuggestions':function(query,callback){var params={q:query,lang:this.options.language,category:'SS',country:this.options.country};var result={'query':query,'html':'','itemsCount':0};var self=this;$.ajax({url:this.options.url,data:params,success:function(data){if(data){var items=data.data.SuggestionItems[0]?data.data.SuggestionItems[0].list:[];if(items&&items.length!=0){if(self.options.count<items.length){items=items.slice(0,self.options.count);}
+result.html=can.view.render(self.options.view,{list:items});result.itemsCount=items.length;}}
+callback(result);},error:function(){callback(null);},dataType:this.options.requestType,jsonp:this.options.callbackParam});},'getParams':function(){return this.options;},'setParams':function(params){this.options=$.extend(true,this.options,params);if(this.options.language=="zh"){if(this.options.country=="hk"||this.options.country=="tw"){this.options.language="zht";}else if(this.options.country=="cn"){this.options.language="zhs";}}}});})(can.$,can,window.HP||(window.HP={}));window.autocompleteLoader.addLoader(new HP.DefaultAutocompleteSSLoader(null,{}));
+
+/*
+Date: 3/15/2015 2:31:36 PM
+All images published
+*/

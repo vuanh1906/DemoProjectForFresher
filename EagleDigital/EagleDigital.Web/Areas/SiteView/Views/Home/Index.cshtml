@@ -1,0 +1,197 @@
+﻿@model EagleDigital.Web.Areas.SiteView.Models.HomeModelView
+
+
+@{
+    ViewBag.Title = "Conversion";
+    Layout = "~/Areas/SiteView/Views/Shared/_Layout.cshtml";
+}
+
+
+@Scripts.Render("~/CustomJs/angularLibrary")
+
+
+<script src="~/Scripts/Angular/Library/ng-onload.min.js"></script>
+<script src="~/Scripts/Angular/Library/angular-sanitize.min.js"></script>
+
+
+<script src="~/Areas/SiteView/Angular/Module/Module.js"></script>
+<script src="~/Areas/SiteView/Angular/Service/ngCommonService.js"></script>
+<script src="~/Areas/SiteView/Angular/Service/ngTreeService.js"></script>
+<script src="~/Areas/SiteView/Angular/Controller/ngTreeController.js"></script>
+
+<script src="~/Scripts/jquery-ui.js"></script>
+<link href="~/Content/jquery-ui.css" rel="stylesheet" />
+
+<style type="text/css">
+    #myOverviewDiv {
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        top: 10px;
+        left: 10px;
+        background-color: aliceblue;
+        z-index: 300;
+        border: solid 1px blue;
+    }
+
+    .container {
+        width: 100% !important;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+<body ng-app="ModuleTreeApp" ng-controller="ngTreeController">
+    <input type="button" value="button" ng-click="TreeModule.Manage.PushTest();TreeModule.Manage.RefeshTest();" />
+
+    <input type="search" id="mySearch" @*onkeypress="if (event.keyCode === 13) searchDiagram()"*@ />
+    <button ng-click="TreeModule.InitForm.Func.SearchDiagram()">Search</button>
+
+
+    <div id="sample" style="position: relative;">
+        <div id="myDiagramDiv" style="background-color: white; border: solid 1px black; width: 100%; height: auto;"></div>
+        <div id="myOverviewDiv"></div>
+    </div>
+
+    @*  *@
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Thông tin chi tiết</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Họ tên: {{TreeModule.NodeDataArray.Item.Name}}</p>
+                    <p>Giới tính: {{TreeModule.NodeDataArray.Item.Gender==true? "Nam" : "Nữ"}}</p>
+                    <p>Ngày sinh: {{TreeModule.NodeDataArray.Item.BirthDayDisplay}}</p>
+                    <p>Ngày mất: {{TreeModule.NodeDataArray.Item.DateDeathDisplay}}</p>
+                    <p>Nơi sống: {{TreeModule.NodeDataArray.Item.Address}}</p>
+                    <p>Công việc: {{TreeModule.NodeDataArray.Item.Job}}</p>
+                    <p>Số điện thoại: {{TreeModule.NodeDataArray.Item.Phone}}</p>
+                    <p>Thông tin khác: {{TreeModule.NodeDataArray.Item.Info}}</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    @*  *@
+
+
+    @*  *@
+    <div id="myModalEdit" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Sửa thông tin thành viên</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group clearfix">
+                        <div class="col-sm-3">
+                            <label>Họ tên</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control k-input" ng-model="TreeModule.NodeDataArray.Item.Name" />
+                        </div>
+                    </div>
+                    <div class="form-group clearfix">
+                        <div class="col-sm-3">
+                            <label>Giới tính</label>
+                        </div>
+                        <div class="col-sm-3">
+                            <input id="Gender_male" name="Gender" type="radio" ng-value="true" ng-model="TreeModule.NodeDataArray.Item.Gender" /> <label for="Gender_male">Đàn ông</label>
+                        </div>
+                        <div class="col-sm-3">
+                            <input id="Gender_female" name="Gender" type="radio" ng-value="false" ng-model="TreeModule.NodeDataArray.Item.Gender" /> <label for="Gender_female">Đàn bà</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group clearfix">
+                        <div class="col-sm-3">
+                            <label>Ngày sinh</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" value="0" class="datepicker form-control k-input" ng-model="TreeModule.NodeDataArray.Item.BirthDayDisplay" />
+                        </div>
+                    </div>
+
+                    <div class="form-group clearfix">
+                        <div class="col-sm-3">
+                            <label>Ngày mất</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" value="0" class="datepicker form-control k-input" ng-model="TreeModule.NodeDataArray.Item.DateDeathDisplay" />
+                        </div>
+                    </div>
+
+                    <div class="form-group clearfix">
+                        <div class="col-sm-3">
+                            <label>Nơi sống</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control k-input" ng-model="TreeModule.NodeDataArray.Item.Address" />
+                        </div>
+                    </div>
+
+                    <div class="form-group clearfix">
+                        <div class="col-sm-3">
+                            <label>Công việc</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control k-input" ng-model="TreeModule.NodeDataArray.Item.Job" />
+                        </div>
+                    </div>
+
+                    <div class="form-group clearfix">
+                        <div class="col-sm-3">
+                            <label>Số điện thoại</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control k-input" ng-model="TreeModule.NodeDataArray.Item.Phone" />
+                        </div>
+                    </div>
+
+                    <div class="form-group clearfix">
+                        <div class="col-sm-3">
+                            <label>Thông tin khác</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control k-input" ng-model="TreeModule.NodeDataArray.Item.Info" />
+                            @*<textarea type="text" class="form-control k-input" ng-model="TreeModule.NodeDataArray.Item.Info" />*@
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" ng-click="TreeModule.Manage.SaveItem()">Lưu lại thông tin</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    @*  *@
+
+
+</body>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.datepicker').datepicker({
+            dateFormat: 'dd/mm/yy'
+        });
+    });
+</script>
+
+
+

@@ -1,0 +1,146 @@
+﻿@model EagleDigital.Web.Areas.SiteView.Models.HomeModelView
+
+
+@{
+    ViewBag.Title = "Conversion";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@*<style>
+    table, th, td {
+   border: 1px solid  #639BB1;
+   }
+</style>*@
+
+
+@*<div style="height: 30px">
+    
+</div>*@
+
+<table style="width: 50%;text-align: center;vertical-align: top;">
+    <tr style="height: 30px"></tr>
+    <tr>
+        <th>List Domains</th>
+        <th>List Categorys</th>
+        <th>List Product</th>
+        <th>List Product Call Procedure</th>
+    </tr>
+    <tr style="vertical-align: top;">
+        <td>
+            @foreach(var item in Model.ListDomain)
+            {
+                <text>
+                    @item.Id + <span class="minhlai" >@item.Name</span> <br/>
+                </text>
+            }
+        </td>
+        <td>
+            @foreach(var item in Model.ListCategory)
+            {
+                <text>
+                    @item.Name <br/>
+                </text>
+            }
+        </td>
+        <td>
+            @foreach(var item in Model.LisProduct)
+            {
+                <text>
+                    @item.Name <br/>
+                </text>
+            }
+        </td>
+        <td>
+            @foreach(var item in Model.ListProductByProcedure)
+            {
+                <text>
+                    @item.Name <br/>
+                </text>
+            }
+        </td>
+    </tr>
+</table>
+
+
+<style>
+
+    .minhlai {
+        color: red;
+        font-size:19px;
+    }
+
+</style>
+
+
+
+@*<div class="container">
+            <div class="banners">
+                <div>
+                    <div class="mboxDefault" style="visibility: visible;display: block;">
+                        <a id="HHObannerURL" href="#" data-metrics="us_en_home_message_l23_hho_PSG_banner-win10-upgrade-hho-v2-20150707" data-impression="true">
+                            <img src="~/Content/Image/hpe_US_EN_HHO_PSG_win10-upgrade-hho-v2_20150707.jpg" alt="HHO main banner test">
+                        </a>
+                    </div>
+                    <script type="text/javascript">mboxCreate('HomeHero_BK_POC', 'profile.BK_seg=' + window.BK_POC.offerValue);</script>
+                    <div id="mboxMarker-default-HomeHero_BK_POC-0" style="visibility:hidden;display:none">&nbsp;</div>
+
+                    <script src="http://hewlettpackard.tt.omtrdc.net/m2/hewlettpackard/mbox/standard?mboxHost=www.hp.com&amp;mboxPage=1436887372470-345712&amp;screenHeight=768&amp;screenWidth=1366&amp;browserWidth=1366&amp;browserHeight=150&amp;browserTimeOffset=420&amp;colorDepth=24&amp;mboxSession=1436887367724-372221&amp;mboxPC=1436881704181-287191.28_24&amp;profile.db_enabled=false&amp;mboxCount=2&amp;mboxTime=1436912577052&amp;profile.BK_seg=NA&amp;mbox=HomeHero_BK_POC&amp;mboxId=0&amp;mboxURL=http%3A%2F%2Fwww.hp.com%2Fcountry%2Fus%2Fen%2Fuc%2Fwelcome.html&amp;mboxReferrer=http%3A%2F%2Fwww.hp.com%2F&amp;mboxVersion=57"></script>
+                    <div style="visibility: hidden; display: none" id="mboxImported-default-HomeHero_BK_POC-0"><!-- Offer Id: 93081  --><script type="text/javascript">
+                                                                                                                                            /*mboxHighlight+ (1of2) v1 ==> Response Plugin*/
+                                                                                                                                            window.ttMETA = (typeof (window.ttMETA) != 'undefined') ? window.ttMETA : []; window.ttMETA.push({ 'mbox': 'HomeHero_BK_POC', 'campaign': '', 'experience': '', 'offer': '' }); window.ttMBX = function (x) { var mbxList = []; for (i = 0; i < ttMETA.length; i++) { if (ttMETA[i].mbox == x.getName()) { mbxList.push(ttMETA[i]) } } return mbxList[x.getId()] }
+                                                                                                                                        </script></div>
+
+                    <div class="bannerContent">
+                        <a id="shopNowURL" href="" data-metrics="us_en_home_message_l1_hho_Shared_shopnow" data-impression="true"></a>
+                        <div class="shopNow" data-href="shopNowURL">
+                            <strong>Development</strong>
+                            <ul>
+                                @foreach(var item in Model.ListDomain){
+                                        <text>
+                                            <li><a href='@Url.Action("DomainDetail","Home",new {Id=item.Id})' tabindex="100" data-metrics="us_en_home_message_l1_hho_PSG_shopnow_pos1-Laptops">@item.Name</a></li>
+                                        </text>
+                                }
+                            </ul>
+                            <a href="" class="button secondary" data-metrics="us_en_home_message_l1_hho_Shared_shopnow-cta">Implementation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Segment products -->
+            <div class="segment-products">
+                <div>
+                    <a tabindex="102" href="" data-metrics="us_en_home_message_m1_HHO_PSG_module1-new-desktops-20150628" data-impression="true">
+                        <img src="~/Content/Image/hpe_US_EN_HHO_PSG_Mod-1u_new-desktops_20150628.jpg" alt="">
+                        <strong>Embrace the change</strong>
+                        <q>Embrace the change</q>
+                        <span data-metrics="us_en_home_message_m1_HHO_PSG_module1-cta-new-desktops-20150628">Show me</span>
+                    </a>
+                </div>
+                <div>
+                    
+                  
+                    <a tabindex="102" href="" data-metrics="us_en_home_message_m2_LEB_Corp_module2-nsob-cloud-20150707" data-impression="true">
+                        <img src="~/Content/Image/hpe_US_EN_LEB_Corp_Mod-2u_nsob-cloud_20150503.jpg" alt="">
+                        <strong>Our Cloud means business</strong>
+                        <q>Our Cloud means business</q>
+                        <span data-metrics="us_en_home_message_m2_LEB_Corp_module2-cta-nsob-business-solutions-20150621">Show me</span>
+                    </a>
+                </div>
+                <div class="last">
+
+                    <a href="" data-metrics="us_en_home_message_m3_SMB_PSG_module3-win10-upgrade-smb-v1-20150622" data-impression="true" tabindex="102">
+                        <img src="~/Content/Image/hpe_US_EN_SMB_PSG_Mod-3u_win10-upgrade-smb-v1_20150622.jpg" alt="">
+                        <strong>It’s almost here</strong>
+                        <q>It’s almost here</q>
+                        <span data-metrics="us_en_home_message_m3_SMB_PSG_module3-cta-win10-upgrade-smb-v1-20150622">Learn more</span>
+                    </a>
+                </div>
+            </div>
+            <!-- End of Segment products -->
+        </div>
+   
+    *@
+
+

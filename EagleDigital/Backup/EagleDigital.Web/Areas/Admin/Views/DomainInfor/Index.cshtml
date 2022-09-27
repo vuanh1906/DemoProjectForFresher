@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+    
+}
+
+
+
+<div ng-controller="domainInforController">
+<input type="button" value="Create New" ng-click="Create()" />
+<div class="panel-body remove-padding">
+    <div class="table-container-md">
+        <div class="table-responsive scroll-table">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Domain</th>
+                        <th>TabName</th>
+                        <th>Content</th>
+                        <th class="text-center">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodys">
+                    <tr data-ng-repeat="item in model.domainInforList" id="DomainInfor_{{item.Id}}">
+                        <td>{{item.Domain}}</td>
+                        <td>{{item.TabName}}</td>
+                        <td>{{item.Content}}</td>
+                        <td class="text-center">
+                            <a  class="btn btn-xs btn-primary tooltips" ng-click="EditDomainInfor(item.Id)" data-placement="top" data-original-title="Edit"><i class="fa fa-pencil-square-o"></i></a>
+                            <a  class="btn btn-xs btn-red tooltips btn-remove-modal" data-placement="top" data-original-title="Remove" ng-click="RemoveDomainInfor(item.Id)"><i class="fa fa-trash-o"></i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+    
+</div>

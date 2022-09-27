@@ -1,0 +1,13 @@
+﻿Enable-Migrations 
+Add-Migration [NameAddMiragion]
+Update-Database
+
+
+enable-migrations -ContextTypeName EagleDigital.CodeFirst.TenantOne.MickContext -MigrationsDirectory:TenantOne\MickContextMigrations
+Add-Migration -configuration EagleDigital.CodeFirst.TenantOne.MickContextMigrations.Configuration Initial
+Update-Database -configuration EagleDigital.CodeFirst.TenantOne.MickContextMigrations.Configuration -Verbose
+
+enable-migrations -ContextTypeName EagleDigital.CodeFirst.TenantTwo.NewTenantContext -MigrationsDirectory:TenantTwo\NewTenantContextMigrations
+Add-Migration -configuration EagleDigital.CodeFirst.TenantTwo.NewTenantContextMigrations.Configuration Initial
+Update-Database -configuration EagleDigital.CodeFirst.TenantTwo.NewTenantContextMigrations.Configuration -Verbose
+

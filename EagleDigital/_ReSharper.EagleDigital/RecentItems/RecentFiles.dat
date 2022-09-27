@@ -1,0 +1,66 @@
+﻿<RecentFiles>
+  <RecentFiles>
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantTwo/d:NewTenantContextMigrations/f:201510281909452_Initial.cs" caret="587" fromTop="18" />
+    <File id="B0059B77-5B36-4EB2-A2F5-E298E25C5400/d:Services/f:CategoryService.cs" caret="0" fromTop="0" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:Infrastructure/f:ProjectInfor.txt" caret="126" fromTop="6" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:Infrastructure/f:Elmah.SqlServer.sql" caret="0" fromTop="0" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:Infrastructure/f:Congiguration.txt" caret="0" fromTop="0" />
+    <File id="B0059B77-5B36-4EB2-A2F5-E298E25C5400/f:App.config" caret="0" fromTop="0" />
+    <File id="B0059B77-5B36-4EB2-A2F5-E298E25C5400/f:packages.config" caret="0" fromTop="0" />
+    <File id="EEC56E75-C5EC-489C-94E9-72542CF260C1/f:Web.config" caret="1383" fromTop="14" />
+    <File id="EEC56E75-C5EC-489C-94E9-72542CF260C1/d:Areas/d:SiteView/d:Models/f:HomeModelView.cs" caret="391" fromTop="12" />
+    <File id="B0059B77-5B36-4EB2-A2F5-E298E25C5400/d:Services/f:SalePromotionService.cs" caret="1832" fromTop="22" />
+    <File id="B0059B77-5B36-4EB2-A2F5-E298E25C5400/d:IServices/f:ISalePromotionService.cs" caret="259" fromTop="9" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantTwo/d:Models/f:SalePromotion.cs" caret="367" fromTop="14" />
+    <File id="EEC56E75-C5EC-489C-94E9-72542CF260C1/f:Global.asax.cs" caret="2815" fromTop="16" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantTwo/d:Models/f:Product.cs" caret="466" fromTop="14" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/f:App.config" caret="2362" fromTop="0" />
+    <File id="EEC56E75-C5EC-489C-94E9-72542CF260C1/d:Areas/d:SiteView/d:Controllers/f:HomeController.cs" caret="2178" fromTop="19" />
+    <File id="EEC56E75-C5EC-489C-94E9-72542CF260C1/d:Views/d:Shared/f:_Layout.cshtml" caret="4064" fromTop="0" />
+    <File id="EEC56E75-C5EC-489C-94E9-72542CF260C1/d:Areas/d:SiteView/d:Views/d:Home/f:Index.cshtml" caret="0" fromTop="0" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:DataCommon/f:InsertDataCommon.cs" caret="0" fromTop="0" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantOne/d:MickContextMigrations/f:Configuration.cs" caret="0" fromTop="0" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:Infrastructure/f:CodeFirstCommand.txt" caret="683" fromTop="11" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantOne/d:Models/f:TabName.cs" caret="704" fromTop="15" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantTwo/d:Repositories/f:IEntityRepositoryNewTenant.cs" caret="607" fromTop="12" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantTwo/d:Repositories/f:EntityRepositoryNewTenant.cs" caret="1245" fromTop="3" />
+    <File id="B0059B77-5B36-4EB2-A2F5-E298E25C5400/d:IServices/f:IProductService.cs" caret="425" fromTop="7" />
+    <File id="B0059B77-5B36-4EB2-A2F5-E298E25C5400/d:Services/f:ProductService.cs" caret="2502" fromTop="16" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantTwo/f:INewTenantContext.cs" caret="0" fromTop="0" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantTwo/f:NewTenantContext.cs" caret="716" fromTop="11" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantOne/f:IMickContext.cs" caret="0" fromTop="0" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantOne/f:MickContext.cs" caret="1870" fromTop="11" />
+  </RecentFiles>
+  <RecentEdits>
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantOne/d:Repositories/f:IEntityRepository.cs" caret="68" fromTop="2" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantOne/d:Models/f:AboutUs.cs" caret="132" fromTop="4" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantOne/d:Models/f:BusinessBase.cs" caret="82" fromTop="3" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantOne/d:Models/f:Category.cs" caret="164" fromTop="5" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantOne/d:Models/f:ContactUs.cs" caret="129" fromTop="3" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantOne/d:Models/f:RequestProject.cs" caret="167" fromTop="5" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantOne/d:Models/f:SubCategory.cs" caret="187" fromTop="5" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantOne/d:Models/f:TabName.cs" caret="187" fromTop="5" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantOne/d:Models/f:Domain.cs" caret="134" fromTop="3" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantOne/d:Models/f:DomainInfor.cs" caret="99" fromTop="2" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantTwo/f:INewTenantContext.cs" caret="105" fromTop="3" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:Infrastructure/f:CodeFirstCommand.txt" caret="543" fromTop="9" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantTwo/d:Models/f:Product.cs" caret="180" fromTop="5" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantTwo/d:Models/f:SalePromotion.cs" caret="92" fromTop="2" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantTwo/d:NewTenantContextMigrations/f:Configuration.cs" caret="2107" fromTop="30" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantOne/d:MickContextMigrations/f:Configuration.cs" caret="12108" fromTop="66" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantTwo/f:NewTenantContext.cs" caret="882" fromTop="18" />
+    <File id="B0059B77-5B36-4EB2-A2F5-E298E25C5400/d:IServices/f:ISalePromotionService.cs" caret="467" fromTop="14" />
+    <File id="B0059B77-5B36-4EB2-A2F5-E298E25C5400/d:Services/f:SalePromotionService.cs" caret="665" fromTop="7" />
+    <File id="EEC56E75-C5EC-489C-94E9-72542CF260C1/f:Global.asax.cs" caret="2901" fromTop="17" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantTwo/d:Repositories/f:IEntityRepositoryNewTenant.cs" caret="435" fromTop="14" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/d:TenantTwo/d:Repositories/f:EntityRepositoryNewTenant.cs" caret="1113" fromTop="16" />
+    <File id="B0059B77-5B36-4EB2-A2F5-E298E25C5400/d:Services/f:ProductService.cs" caret="2112" fromTop="17" />
+    <File id="B0059B77-5B36-4EB2-A2F5-E298E25C5400/d:IServices/f:IProductService.cs" caret="479" fromTop="16" />
+    <File id="EEC56E75-C5EC-489C-94E9-72542CF260C1/f:Web.config" caret="1605" fromTop="15" />
+    <File id="EEC56E75-C5EC-489C-94E9-72542CF260C1/d:Areas/d:SiteView/d:Models/f:HomeModelView.cs" caret="479" fromTop="14" />
+    <File id="EEC56E75-C5EC-489C-94E9-72542CF260C1/d:Views/d:Shared/f:_Layout.cshtml" caret="4144" fromTop="20" />
+    <File id="011440B6-5551-45A0-B343-DB14F0781287/f:App.config" caret="1944" fromTop="18" />
+    <File id="EEC56E75-C5EC-489C-94E9-72542CF260C1/d:Areas/d:SiteView/d:Controllers/f:HomeController.cs" caret="2382" fromTop="21" />
+    <File id="EEC56E75-C5EC-489C-94E9-72542CF260C1/d:Areas/d:SiteView/d:Views/d:Home/f:Index.cshtml" caret="149" fromTop="5" />
+  </RecentEdits>
+</RecentFiles>

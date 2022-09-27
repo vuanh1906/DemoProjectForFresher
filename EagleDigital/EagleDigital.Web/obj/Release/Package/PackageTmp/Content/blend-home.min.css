@@ -1,0 +1,22 @@
+﻿.content{width:100%;min-width:360px;margin:0 auto;font-family:HPSimplified,arial}.content a{text-decoration:none;color:#007dba}.content a:hover,.content a:focus{text-decoration:underline}
+.content ul{margin:0;padding:0;list-style:none}.content p{margin:0}.content p,.content strong{font-style:normal}.content img{border:0}.dataLink{visibility:hidden;line-height:0;height:0;width:0;overflow:hidden;position:absolute}
+.content .button{border-radius:0 5px 0 5px;padding:5px 13px;font-weight:bold}.content .button:hover,.content .button:focus{text-decoration:none}.content .slim{padding:2px 10px}
+.content a.button,.content a.primary{background-color:#007dba;color:#fff}.content .primary:hover,.content .primary:focus{background-color:#0073b3;text-decoration:none}
+.content a.secondary{background-color:#d7410b;color:#fff}.content .secondary:hover,.content .secondary:focus{background-color:#c1401a;text-decoration:none}
+.container{width:948px;margin:0 auto}.content>div{width:100%;max-width:948px;margin:0 auto;margin-bottom:20px}.content>div:after,.content .banners>div:after{content:"";display:table;clear:both}
+.container>div{width:100%;clear:both;float:left}.content>.hero{max-width:100%;margin-bottom:20px;display:inherit}.content .banners{position:relative;margin-bottom:18px}
+.content .banners>div{width:100%;position:relative}.content .banners>div img{position:absolute;top:0}.content .banners .bannerContent{position:relative;top:0}
+.content .banners .shopNow{padding-top:35px;width:200px;min-height:359px;float:left}.content .banners .shopNow strong{font-size:200%;font-weight:bold;line-height:30px}
+.content .banners .shopNow a{font-size:112.5%}.content .banners .shopNow ul{margin-top:8px}.content .banners .shopNow ul li{line-height:27px}.content .banners .shopNow .button{display:inline-block;margin-top:20px}
+.content .banners .tagline{float:right;font-family:HPSimplifiedLight,HPSimplified,arial;margin-top:90px;width:271px;text-align:left}.content .banners .tagline strong{font-weight:normal;font-size:235%}
+.content .banners .tagline p{font-size:137.5%;padding-top:5px;line-height:24px;color:#5a5a5a;display:inline-block}.content .banners .tagline p sup,.content .banners .tagline p sub{font-size:50%}
+.content .banners .tagline a{font-family:HPSimplified,arial;margin:20px 40px 0 0;font-size:85%;float:right;line-height:16px}.content .banners .tagline a.aligned{float:left}
+.content .banners .wide{width:290px}.content .banners .wide a{margin-right:30px}.content .banners .narrow{width:202px}.content .banners .narrow a{margin-right:0}
+.content .banners .smaller:not(a){font-size:94%;line-height:265%}.content .banners .smaller a{font-size:106.4%}.segment-products{margin-bottom:16px}.segment-products>div,.segment-products>div a>span{background:url(../i/blend-homepage-hpe.png) 0 0 no-repeat}
+.segment-products>div{float:left;text-align:center;width:296px;padding-right:16px;margin-right:14px;background-position:307px top;cursor:pointer}.segment-products>.last{margin-right:0;padding-right:0;background:0}
+.segment-products>div a{display:block;color:#767676}.segment-products>div a:hover,.segment-products>div a:focus{text-decoration:none}.segment-products>div a strong{font-family:"HPSimplifiedLight","HPSimplified",Arial;font-size:137.5%;line-height:23px;padding:5px 0 3px;display:inline-block;font-weight:normal;color:#000}
+.segment-products>div a small{vertical-align:top}.segment-products>div a strong small{font-size:64%}.segment-products>div a q,.segment-products>div a em{font-size:87.5%;line-height:18px;display:block;margin-bottom:5px;font-style:normal}
+.segment-products>div a q small,.segment-products>div a em small{font-size:72%;line-height:15px}.segment-products>div a cite{display:block;font-size:80%;font-style:italic}
+.segment-products>div a q>cite{display:inline;vertical-align:bottom}.segment-products>div a>span{background-position:-24px -200px;padding-left:25px;padding-bottom:2px;font-size:93.75%;line-height:16px;display:inline-block;margin-top:18px;color:#000}
+.segment-products>div a:hover>span,.segment-products>div a:focus>span{background-position:-24px -236px;text-decoration:underline}.segment-products>div q:before,.segment-products>div q:after{content:""}
+.segment-products>div a:hover,.segment-products>div a:focus,.segment-products>div a:hover span,.segment-products>div a:focus span{color:#007dba}

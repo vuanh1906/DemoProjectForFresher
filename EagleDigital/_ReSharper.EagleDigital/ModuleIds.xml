@@ -1,0 +1,7 @@
+<Modules>
+  <Module PersistentId="2520F542-B4F0-40A8-8BF8-C1F61C4DA391" ModuleId="CoreLib" />
+  <Module PersistentId="B0059B77-5B36-4EB2-A2F5-E298E25C5400" ModuleId="EagleDigital.Service" />
+  <Module PersistentId="EEC56E75-C5EC-489C-94E9-72542CF260C1" ModuleId="EagleDigital.Web_2" />
+  <Module PersistentId="011440B6-5551-45A0-B343-DB14F0781287" ModuleId="EagleDigital.CodeFirst" />
+  <Module PersistentId="50C8BE92-54FC-4F9F-9BD9-2B79B6EAED65" ModuleId="Dapper" />
+</Modules>

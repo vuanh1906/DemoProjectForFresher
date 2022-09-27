@@ -1,0 +1,238 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/SiteView/Views/Shared/_LayoutDashboard.cshtml";
+}
+@Scripts.Render("~/CustomJs/angularLibrary")
+
+<script src="~/Scripts/Angular/Library/ng-onload.min.js"></script>
+<script src="~/Scripts/Angular/Library/angular-sanitize.min.js"></script>
+
+
+<script src="~/Areas/SiteView/Angular/Module/DashboardModule.js"></script>
+<script src="~/Areas/SiteView/Angular/Service/ngCommonService.js"></script>
+<script src="~/Areas/SiteView/Angular/Service/ngDashboardService.js"></script>
+<script src="~/Areas/SiteView/Angular/Controller/ngDashboardController.js"></script>
+
+
+<body ng-app="ModuleDashboardApp" ng-controller="ngDashboardController">
+
+<header class="page-header">
+    <div class="row">
+        <div class="col m6 s12 social">
+            <a href="#" data-activates="slide-out" class="button-collapse hide-on-med-and-up left"><i class="mdi-navigation-menu"></i> <strong>Menu</strong></a>
+            <a href="#!"><i class="fa fa-facebook-f"></i></a>
+            @*<a href="#!"><i class="fa fa-google-plus"></i></a>
+              <a href="#!"><i class="fa fa-envelope"></i></a>*@
+        </div>
+        <div class="col m6 s12 right-align helper">
+            <span><i class="fa fa-phone"></i>0989999999</span>
+            <br class="hide-on-med-and-up">
+            @*<span><i class="fa fa-question-circle"></i><a href="#!">Help</a></span>*@
+        </div>
+    </div>
+    <div class="logo center-align">
+        <img src="~/Content/Image/logo.jpg" alt="" class="responsive-img">
+
+    </div>
+    <nav class="container hide-on-small-only">
+        <div class="nav-wrapper">
+            <ul id="" class="">
+                <li><a href="#">Lịch sử dòng họ</a></li>
+                <li><a href='@Url.Action("Index", "Home", new {Area = "SiteView"})'>Gia phả</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<!-- end header -->
+<!-- banner -->
+<div class="banner parallax-container">
+    <div class="parallax"><img src="~/Content/Image/banner.jpg" alt="" class="" style="width: 100%;">
+    </div>
+</div>
+<!-- end banner -->
+<!-- main -->
+<div class="main">
+
+    <div class="row post-row-1">
+        <div class="col l3 m12">
+            <div class="post-type-1 card hoverable">
+                <div class="img">
+                    <img src="~/Content/Image/post-type-1.jpg" alt="" class="responsive-img" style="width: 100%; display: block">
+                </div>
+                <div class="body">
+                    <h2 class="headline">Rosewood Cremation & Funderal Services</h2>
+                    @*<h5 class="desc">Our goal is to keep cremation cost and price affordable. </h5>*@
+                    <h5></h5>
+                    <div class="content">
+                        @*<p><span class="focus">Simple</span>  We are factory direct meaning no memberships or sign up fees.
+                        </p>
+                        <p><span class="focus">Easy</span>  With our online cremation tool you can make arrangements from your home.
+                        </p>
+                        <p><span class="focus">Affordable</span>  We have some of the best rates in Arkansas!
+                        </p>*@
+
+                        <p ng-repeat="item in Notify.List">
+                           {{item.IsBirthDay===true? 'Sinh nhật:' : 'Ngày giỗ: '}} {{item.Infor.Name}}  ({{item.IsBirthDay===true? item.BirthDayString : item.DateDeathString}})
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col l9 m12">
+            <div class="row">
+
+
+                <div class="post-type-2 col l12 m6 card hoverable">
+                    <a class="waves-effect waves-light btn" ng-click="Dashboard.ShowAddNew()">Thêm mới bài viết</a>
+                </div>
+
+                <style>
+                    .add-news {
+                      width: 60%;
+                    }
+
+                </style>
+
+                <div id="myModal" class="modal add-news">
+                    <div class="modal-header">Thêm bài viết mới</div>
+                    <div class="modal-content">
+                        <p>Tiêu đê: {{Dashboard.Model.Title}}</p>
+                        <p>Nội dung: {{Dashboard.Model.Content}}</p>
+                        <p>Ngày tạo: {{Dashboard.Model.CreateDate}}</p>
+                        <p>Trạng thái: {{Dashboard.Model.IsDelete}}</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="modal-action modal-close waves-effect waves-green btn">CLOSE</a>
+                    </div>
+                </div>
+
+
+
+
+                <div class="post-type-2 col l12 m6 card hoverable">
+                    <div class="row">
+                        <div class="col l2 m6">
+                            <div class="img">
+                                <img src="~/Content/Image/person.jpg" alt="" style="width: 100%;">
+                                <a href="#">
+                                    <div class="blur"></div></a>
+                            </div>
+                        </div>
+                        <div class="col l10 m6">
+                            <h2 class="headline">Immediate Need</h2>
+                            <p>If you just lost a loved one, we offer our deepest condolences. During the time when a loved one has passed, you do not need things that are difficult and complex. At Rosewood Cremation and Funerals, we are committed to making things simple, easy and affordable for our customers.</p>
+                            <a class="waves-effect waves-light btn">Start cremation arrangements</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-type-2 col l12 m6 card hoverable">
+                    <div class="row">
+                        <div class="col l2 m6">
+
+                        </div>
+                        <div class="col l10 m6">
+                            <h2 class="headline">Pre-planning</h2>
+                            <p>
+                                Pre-planning your funeral should be a natural part of life, because it provides you with the time to make end-of-life decisions in a calm and rational atmosphere. Start the online process now, or meet with one of our pre-planning advisors.
+                                It just makes sense.
+                            </p>
+                            <a class="waves-effect waves-light btn">Start pre-planning arragements</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row recentObituaries">
+        <div class="header center-align">
+            <h3>Bài viết về các thành viên</h3>
+        </div>
+        <div class="body row">
+            <div class="col l3 m6 s12">
+                <div class="card hoverable">
+                    <div class="img">
+                        <img src="~/Content/Image/person.jpg" alt="" style="width: 100%;">
+                        <a href="#">
+                            <div class="blur"></div></a>
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <a href="#">
+                                <h3>Saying Good-bye to Jane Doe</h3></a>
+                        </div>
+                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat, orci in sagittis vulputate, nunc ligula porttitor nibh, non commodo sapien sapien in magna. </p>
+                        <a href="#" class="more">See more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l3 m6 s12">
+                <div class="card hoverable">
+                    <div class="img">
+                        <img src="~/Content/Image/person-1.jpg" alt="" style="width: 100%;">
+                        <a href="#">
+                            <div class="blur"></div></a>
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <a href="#">
+                                <h3>Saying Good-bye to Jane Doe</h3></a>
+                        </div>
+                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat, orci in sagittis vulputate, nunc ligula porttitor nibh, non commodo sapien sapien in magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quaerat eos quasi, maxime incidunt quis eligendi obcaecati, aut sint totam autem amet officia sunt numquam ab repellendus voluptatibus, ipsa eum!</p>
+                        <div><a href="#" class="more">See more</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col l3 m6 s12">
+                <div class="card hoverable">
+                    <div class="img">
+                        <img src="~/Content/Image/person-2.jpg" alt="" style="width: 100%;">
+                        <a href="#">
+                            <div class="blur"></div></a>
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <a href="#">
+                                <h3>Saying Good-bye to Jane Doe</h3></a>
+                        </div>
+                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat, orci in sagittis vulputate, nunc ligula porttitor nibh, non commodo sapien sapien in magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, quia. </p>
+                        <a href="#" class="more">See more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l3 m6 s12">
+                <div class="card hoverable">
+                    <div class="img">
+                        <img src="~/Content/Image/person-3.jpg" alt="" style="width: 100%;">
+                        <a href="#">
+                            <div class="blur"></div></a>
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <a href="#">
+                                <h3>Saying Good-bye to Jane Doe</h3></a>
+                        </div>
+                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat, orci in sagittis vulputate, nunc ligula porttitor nibh, non commodo sapien sapien in magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse dolorum adipisci ipsum enim, ipsam et minus tenetur nihil dicta rerum.</p>
+                        <a href="#" class="more">See more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="col m12 center-align">
+                <a href="#" class="see-all">Hiển thị tất cả các bài viết</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end main -->
+<!-- footer -->
+<footer class="footer"></footer>
+<!-- end footer -->
+
+
+</body>
+
